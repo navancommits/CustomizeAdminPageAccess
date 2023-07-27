@@ -44,7 +44,7 @@ namespace CustomizeAdminPageAccess
         protected override void OnInit(EventArgs arguments)
         {
             Assert.ArgumentNotNull((object)arguments, nameof(arguments));
-            this.CheckSecurity();
+            this.CheckSecurity("sitecore\\CachePageAccess"); 
             this.InitializeComponent();
             base.OnInit(arguments);
         }

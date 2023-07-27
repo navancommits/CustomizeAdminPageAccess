@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebApplication2</RootNamespace>
-    <AssemblyName>WebApplication2</AssemblyName>
+    <RootNamespace>SitecoreAdminCustomPages</RootNamespace>
+    <AssemblyName>SitecoreAdminCustomPages</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -460,12 +460,6 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CustomizeAdminPageAccess\CustomizeAdminPageAccess.csproj">
-      <Project>{550148da-966e-4c64-a0f5-d14d37bc6f1c}</Project>
-      <Name>CustomizeAdminPageAccess</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="sitecore\admin\cache.aspx" />
     <Content Include="sitecore\admin\DBCleanup.aspx" />
     <Content Include="sitecore\admin\EventQueueStats.aspx" />
@@ -473,6 +467,12 @@
     <Content Include="sitecore\admin\Logs.aspx" />
     <Content Include="sitecore\admin\PublishQueueStats.aspx" />
     <Content Include="sitecore\admin\stats.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomizeAdminPageAccess\CustomizeAdminPageAccess.csproj">
+      <Project>{550148da-966e-4c64-a0f5-d14d37bc6f1c}</Project>
+      <Name>CustomizeAdminPageAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

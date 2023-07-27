@@ -39,7 +39,7 @@ namespace CustomizeAdminPageAccess
         protected override void OnInit(EventArgs args)
         {
             Assert.ArgumentNotNull((object)args, "arguments");
-            this.CheckSecurity();
+            this.CheckSecurity("sitecore\\EventQueueStatsPageAccess");
         }
 
         protected override void OnLoad(EventArgs e)

@@ -68,7 +68,7 @@ namespace CustomizeAdminPageAccess
         {
             Assert.ArgumentNotNull(sender, nameof(sender));
             Assert.ArgumentNotNull((object)arguments, nameof(arguments));
-            this.CheckSecurity();
+            this.CheckSecurity("sitecore\\StatsPageAccess");
             this.ShowSiteSelector();
             this.ShowRenderingStats(this.Request.QueryString["site"]);
         }

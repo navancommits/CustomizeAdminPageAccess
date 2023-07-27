@@ -32,7 +32,7 @@ namespace CustomizeAdminPageAccess
         protected override void OnInit(EventArgs args)
         {
             Assert.ArgumentNotNull((object)args, "arguments");
-            this.CheckSecurity();
+            this.CheckSecurity("sitecore\\JobsPageAccess");
             base.OnInit(args);
         }
 

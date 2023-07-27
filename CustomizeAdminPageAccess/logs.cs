@@ -52,7 +52,7 @@ namespace CustomizeAdminPageAccess
 
         protected void Page_Init(object sender, EventArgs e)
         {
-            this.CheckSecurity();
+            this.CheckSecurity("sitecore\\LogsPageAccess");
             string str1 = this.Request.QueryString["file"];
             if (!string.IsNullOrEmpty(str1))
             {
